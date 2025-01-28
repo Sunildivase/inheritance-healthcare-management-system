@@ -1,6 +1,7 @@
 package com.healthcaremnagement;
 
 import com.healthcaremnagement.service.DoctorService;
+import com.healthcaremnagement.service.HospitalService;
 import com.healthcaremnagement.service.UserService;
 import com.healthcaremnagement.service.PersonService;
 
@@ -51,6 +52,9 @@ public class InheritanceHealthcareDemo {
                     break;
 
                 case 4:
+                    HospitalService hospitalService = new HospitalService();
+                    hospitalService.createHospital();
+                    hospitalService.displayHospital();
                     System.out.println("hospital registered successfully");
                     break;
 
