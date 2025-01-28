@@ -1,5 +1,6 @@
 package com.healthcaremnagement;
 
+import com.healthcaremnagement.service.DoctorService;
 import com.healthcaremnagement.service.UserService;
 import com.healthcaremnagement.service.PersonService;
 
@@ -41,6 +42,38 @@ public class InheritanceHealthcareDemo {
                     userService.displayUser();
                     System.out.println("patient registered successfully");
                     break;
+
+                case 3:
+                    DoctorService doctorService = new DoctorService();
+                    doctorService.createDoctor();
+                    doctorService.displayDoctor();
+                    System.out.println("doctor registered successfully");
+                    break;
+
+                case 4:
+                    System.out.println("hospital registered successfully");
+                    break;
+
+                case 5:
+                    System.out.println("department created successfully");
+                    break;
+
+                case 6:
+                    System.out.println("appointment booked successfully");
+                    break;
+
+                case 7:
+                    System.out.println("prescription generated successfully");
+                    break;
+
+                case 8:
+                    System.out.println("bill generated successfully");
+                    break;
+
+                default:
+                    System.out.println("please enter valid input");
+                    break;
+
             }
         }while(option!=0);{
             System.out.println("thank you...!!!");

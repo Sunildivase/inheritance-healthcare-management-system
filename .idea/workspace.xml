@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f5ca5df-25c7-45c5-95d3-36b84b74ba66" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/InheritanceHealthcareDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/service/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/healthcaremnagement/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/healthcaremnagement/service/PeronService.java" beforeDir="false" />
-    </list>
+    <list default="true" id="2f5ca5df-25c7-45c5-95d3-36b84b74ba66" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
