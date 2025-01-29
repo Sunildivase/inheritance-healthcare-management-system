@@ -31,10 +31,27 @@ public class PersonService {
         System.out.println("please enter age ");
         int age = Integer.parseInt(scanner.nextLine());
 
+        System.out.println("please enter gender");
+        String gender = scanner.nextLine();
+
+        System.out.println("please enter contactNo");
+        String contactNo = scanner.nextLine();
+
+        System.out.println("please enter alternateMobile");
+        String alternateMobile = scanner.nextLine();
+
+        System.out.println("please enter address");
+        String address = scanner.nextLine();
+
         Person person = new Person();
         person.setPersonId(personId);
         person.setFirstName(firstName);
         person.setLastName(lastName);
+        person.setAge(age);
+        person.setGender(gender);
+        person.setContactNo(contactNo);
+        person.setAlternateNumber(alternateMobile);
+        person.setAddress(address);
         personHashMap.put(String.valueOf(1),person);
         return person;
     }
