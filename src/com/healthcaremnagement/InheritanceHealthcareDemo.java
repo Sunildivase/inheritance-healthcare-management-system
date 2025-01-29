@@ -1,9 +1,6 @@
 package com.healthcaremnagement;
 
-import com.healthcaremnagement.service.DoctorService;
-import com.healthcaremnagement.service.HospitalService;
-import com.healthcaremnagement.service.UserService;
-import com.healthcaremnagement.service.PersonService;
+import com.healthcaremnagement.service.*;
 
 import java.util.Scanner;
 
@@ -59,18 +56,30 @@ public class InheritanceHealthcareDemo {
                     break;
 
                 case 5:
+                    DepartmentService departmentService = new DepartmentService();
+                    departmentService.createDepartment();
+                    departmentService.displayDepartment();
                     System.out.println("department created successfully");
                     break;
 
                 case 6:
+                    AppointmentService appointmentService = new AppointmentService();
+                    appointmentService.createAppointment();
+                    appointmentService.displayAppointment();
                     System.out.println("appointment booked successfully");
                     break;
 
                 case 7:
+                    PrescriptionService prescriptionService = new PrescriptionService();
+                    prescriptionService.createPrescription();
+                    prescriptionService.displayPrescription();
                     System.out.println("prescription generated successfully");
                     break;
 
                 case 8:
+                    BillingService billingService = new BillingService();
+                    billingService.createBilling();
+                    billingService.displayBilling();
                     System.out.println("bill generated successfully");
                     break;
 
