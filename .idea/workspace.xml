@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f5ca5df-25c7-45c5-95d3-36b84b74ba66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/healthcaremnagement/InheritanceHealthcareDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/InheritanceHealthcareDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/healthcaremnagement/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/service/AppointmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/healthcaremnagement/service/BillingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/service/BillingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/healthcaremnagement/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/healthcaremnagement/service/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/service/HospitalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/healthcaremnagement/service/PrescriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/healthcaremnagement/service/PrescriptionService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
