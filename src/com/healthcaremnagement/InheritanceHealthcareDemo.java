@@ -19,8 +19,10 @@ public class InheritanceHealthcareDemo {
             System.out.println("4.create hospital");
             System.out.println("5.create department");
             System.out.println("6.create appointment");
-            System.out.println("7.create prescription");
-            System.out.println("8.create billing");
+            System.out.println("7.general appointment");
+            System.out.println("8.regular Appointment");
+            System.out.println("9.create prescription");
+            System.out.println("10.create billing");
             System.out.println("please select the option");
             option = Integer.parseInt(scanner.nextLine());
 
@@ -70,13 +72,25 @@ public class InheritanceHealthcareDemo {
                     break;
 
                 case 7:
+                    generalAppointmentService generalAppointmentService = new generalAppointmentService();
+                    generalAppointmentService.regularAppointment();
+                    generalAppointmentService.displayGeneralAppointment();
+                    break;
+
+                case 8:
+                    DoctorAppointmentService doctorAppointmentService = new DoctorAppointmentService();
+                    doctorAppointmentService.doctorAppointment();
+                    doctorAppointmentService.displayDoctorAppointment();
+                    break;
+
+                case 9:
                     PrescriptionService prescriptionService = new PrescriptionService();
                     prescriptionService.createPrescription();
                     prescriptionService.displayPrescription();
                     System.out.println("prescription generated successfully");
                     break;
 
-                case 8:
+                case 10:
                     BillingService billingService = new BillingService();
                     billingService.createBilling();
                     billingService.displayBilling();

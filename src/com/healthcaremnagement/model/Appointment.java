@@ -8,6 +8,16 @@ public class Appointment {
     private int doctorId;
     private int hospitalId;
     private int deptId;
+    private String reasonOfAppointment;
+    private String speciality;
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
 
     @Override
     public String toString() {
@@ -17,6 +27,8 @@ public class Appointment {
                 ", doctorId=" + doctorId +
                 ", hospitalId=" + hospitalId +
                 ", deptId=" + deptId +
+                ", reasonOfAppointment='" + reasonOfAppointment + '\'' +
+                ", speciality='" + speciality + '\'' +
                 '}';
     }
 
@@ -58,6 +70,14 @@ public class Appointment {
 
     public void setDeptId(int deptId) {
         this.deptId = deptId;
+    }
+
+    public String getReasonOfAppointment() {
+        return reasonOfAppointment;
+    }
+
+    public void setReasonOfAppointment(String reasonOfAppointment) {
+        this.reasonOfAppointment = reasonOfAppointment;
     }
 
     @Override

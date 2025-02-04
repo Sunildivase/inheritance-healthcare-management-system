@@ -49,4 +49,45 @@ public class AppointmentService {
            System.out.println("key: "+appointmentEntry.getKey()+"value: "+appointmentEntry.getValue());
        }
    }
+    public Appointment regularAppointment(){
+
+        System.out.println("please enter appointmentId ");
+        int appointmentId = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("please enter reason of appointment");
+        String reasonOfAppointment = scanner.nextLine();
+
+        System.out.println("please enter person Id");
+        int personId = Integer.parseInt(scanner.nextLine());
+
+        Appointment appointment = new Appointment();
+        appointment.setAppointmentId(appointmentId);
+        appointment.setReasonOfAppointment(reasonOfAppointment);
+        appointment.setPersonId(personId);
+
+        appointmentHashMap.put(String.valueOf(1),appointment);
+        return appointment;
+    }
+
+    public Appointment doctorAppointment(){
+
+        System.out.println("please enter appointment Id ");
+        int appointmentId = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("please enter speciality");
+        String speciality = scanner.nextLine();
+
+        System.out.println("please enter personId");
+        int personId = Integer.parseInt(scanner.nextLine());
+
+        Appointment appointment = new Appointment();
+        appointment.setAppointmentId(appointmentId);
+        appointment.setSpeciality(speciality);
+        appointment.setPersonId(personId);
+
+        appointmentHashMap.put(String.valueOf(1),appointment);
+        return appointment;
+    }
+
+
 }
