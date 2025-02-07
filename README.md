@@ -34,12 +34,16 @@ Navigate to the project directory:
 
 # POJO (Plain Old Java Objects)
 <ul>
-  <li>person - (id, fname, lname, age, gender, mobile, alternateMobile, address)</li>
-  <li>doctor -(doctorid,fname,lname,age,gender,contactNo,speciality)</li>
-  <li>hospital-(hopitalid,name,emailId,address,contactno</li>
+  <li>person - (persinId, fname, lname, age, gender, mobile, alternateMobile, address)</li>
+  <li>doctor -(doctorId,fname,lname,age,gender,contactNo,speciality)</li>
+  <li>hospital-(hopitalId,name,emailId,address,contactno</li>
+  <li>department-(deptId,deptname,</li>
+  <li>appointment-(appointmentId,personId,doctorId,hospitalId</li>
+  <li>prescription-(prescriptionId,prescriptionDetails,personId</li>
+  <li>bill-(billId,bill,totalBill</li>
 </ul>
 
-## class diagram
+#  Class Diagram
 ```mermaid
 ---
 title: healthcare management system
