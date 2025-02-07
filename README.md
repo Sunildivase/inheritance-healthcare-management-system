@@ -56,7 +56,12 @@ classDiagram
  Person : +Long alternateMobile
  Person : +String address
 
- Person <-- User  
+class Person{
+ +createPerson()
+ +displayPerson()
+}
+
+  Person --|> User  : Inheritance
 
  User : +int personId
  User : +String firstname
@@ -67,6 +72,11 @@ classDiagram
  User : +Long alternateMobile
  User : +String address
 
+class User{
+ +createUser()
+ +displayUser()
+}
+
 Doctor: +int doctorId
 Doctor: +String firstName
 Doctor: +String lastName
@@ -76,18 +86,59 @@ Doctor: +String contactNo
 Doctor: +String speciality
 Doctor: +int experience
 
+class Doctor{
+ +createDoctor()
+ +displayDoctor()
+}
+
 Hospital: +int hospitalId
 Hospital: +String hospitalName
 Hospital: +String address
 Hospital: +Long contactNo
 Hospital: +String emailId
 
+class Hospital{
++createHospital()
++displayHospital()
+}
+
 Department: +int deptId
 Department: +String deptName
 Department: +doctorId
 Department: +hosptitalId
 
-Hospital <-- Department 
-Doctor  <-- Department 
+class Department{
++createDepartment()
++displayDepartment()
+}
+
+Hospital <-- Department : Association
+Doctor  <-- Department  : Assocciation
+
+Appointment: +int appointmentId
+Appointment: +int personId
+Appointment: +int doctorId
+Appointment: +int hospitalId
+Appointment: +int deptId
+
+class Appointment{
++createAppointment()
++displayAppointment()
++doctorAppointment()
++generalAppointment()
+}
+
+Appointment --|> DoctorAppointment : Inheritance
+Appointment --|> GeneralAppointment : Inheritance
+
+DoctorAppointment : +String speciality
+
+GeneralAppointment : reasonOfAppointment
+
+Appointment --> Person : Association
+Appointment --> Doctor : Association
+Appointment --> Hospital : Association
+Appointment --> Department : Association
+
 
 ```
