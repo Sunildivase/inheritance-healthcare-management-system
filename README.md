@@ -131,6 +131,14 @@ class Appointment{
 Appointment --|> DoctorAppointment : Inheritance
 Appointment --|> GeneralAppointment : Inheritance
 
+class DoctorAppointment{
++doctorAppointment()
+}
+
+class GeneralAppointment{
++generalAppointment()
+}
+
 DoctorAppointment : +String speciality
 
 GeneralAppointment : reasonOfAppointment
@@ -140,5 +148,27 @@ Appointment --> Doctor : Association
 Appointment --> Hospital : Association
 Appointment --> Department : Association
 
+Prescription : +int prescriptionId
+Prescription : +String prescriptionDetails
+Prescription : +int personId
+
+class Prescription{
++createPrescription()
++displayPrescription()
+}
+
+Prescription --> Person : Association
+
+Billing : +int billId
+Billing : +int bill
+Billing : +int totalBill
+Billing : +int personId
+
+class Billing{
++createBilling()
++displayBilling()
+}
+
+Billing --> Person : Association
 
 ```
