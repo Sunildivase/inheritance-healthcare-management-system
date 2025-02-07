@@ -38,3 +38,56 @@ Navigate to the project directory:
   <li>doctor -(doctorid,fname,lname,age,gender,contactNo,speciality)</li>
   <li>hospital-(hopitalid,name,emailId,address,contactno</li>
 </ul>
+
+## class diagram
+```mermaid
+---
+title: healthcare management system
+---
+classDiagram
+
+ class Person
+ Person : +int personId
+ Person : +String firstname
+ Person : +String lastName
+ Person : +int age
+ Person : +String gender
+ Person : +Long contactNo
+ Person : +Long alternateMobile
+ Person : +String address
+
+ Person <-- User  
+
+ User : +int personId
+ User : +String firstname
+ User : +String lastName
+ User : +int age
+ User : +String gender
+ User : +Long contactNo
+ User : +Long alternateMobile
+ User : +String address
+
+Doctor: +int doctorId
+Doctor: +String firstName
+Doctor: +String lastName
+Doctor: +int age
+Doctor: +String gender
+Doctor: +String contactNo
+Doctor: +String speciality
+Doctor: +int experience
+
+Hospital: +int hospitalId
+Hospital: +String hospitalName
+Hospital: +String address
+Hospital: +Long contactNo
+Hospital: +String emailId
+
+Department: +int deptId
+Department: +String deptName
+Department: +doctorId
+Department: +hosptitalId
+
+Hospital <-- Department 
+Doctor  <-- Department 
+
+```
