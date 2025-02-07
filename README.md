@@ -46,6 +46,8 @@ title: healthcare management system
 ---
 classDiagram
 
+ note " This is generally appointment booking for health services"
+
  class Person
  Person : +int personId
  Person : +String firstname
