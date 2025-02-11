@@ -72,7 +72,7 @@ public class InheritanceHealthcareDemo {
                     break;
 
                 case 7:
-                    generalAppointmentService generalAppointmentService = new generalAppointmentService();
+                    GeneralAppointmentService generalAppointmentService = new GeneralAppointmentService();
                     generalAppointmentService.regularAppointment();
                     generalAppointmentService.displayGeneralAppointment();
                     break;
