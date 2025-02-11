@@ -75,6 +75,8 @@ public class InheritanceHealthcareDemo {
                     GeneralAppointmentService generalAppointmentService = new GeneralAppointmentService();
                     generalAppointmentService.regularAppointment();
                     generalAppointmentService.displayGeneralAppointment();
+                    MedicalTestAppointmentService medicalTestAppointmentService = new MedicalTestAppointmentService();
+                    medicalTestAppointmentService.displayTestAppointment();
                     break;
 
                 case 8:
