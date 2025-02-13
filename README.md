@@ -2,38 +2,6 @@
 implementation of inheritance
 <<<<<<< HEAD
 
-## class Diagram
-
-```mermaid
----
-title: Animal example
----
-classDiagram
-note "From Duck till Zebra"
-Animal <|-- Duck
-note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-Animal <|-- Fish
-Animal <|-- Zebra
-Animal : +int age
-Animal : +String gender
-Animal: +isMammal()
-Animal: +mate()
-class Duck{
-+String beakColor
-+swim()
-+quack()
-}
-class Fish{
--int sizeInFeet
--canEat()
-}
-class Zebra{
-+bool is_wild
-+run()
-}
-```
-
-=======
 # Project Name : - healthcare-management-system.
 Project Overview
 The Core Java INHERITANCE healthcare Management Project is a basic Java application that demonstrates a Appointment booking management system. It utilizes object-oriented programming principles and simulates the interactions between persons, doctors, hospitals , and appointments.
