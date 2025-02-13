@@ -1,6 +1,5 @@
 # inheritance-healthcare-management-system
 implementation of inheritance
-<<<<<<< HEAD
 
 # Project Name : - healthcare-management-system.
 Project Overview
@@ -180,4 +179,4 @@ class Billing{
 Billing --> Person : Association
 
 ```
->>>>>>> 2a1618eb5cf694a79d6eab08770b51d260d31383
+
